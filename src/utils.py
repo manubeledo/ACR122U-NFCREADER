@@ -7,7 +7,9 @@ def int_list_to_string_list(data):
 
 
 def replace_arguments(data, arguments):
+    print('Esto es utils data y arguments', data, arguments)
     if not arguments:
+        print('este es el result de replace arguments', data)
         return data
     result = []
     j = 0
@@ -24,4 +26,5 @@ def replace_arguments(data, arguments):
                     for e in arg:
                         result.append(e)
                 j += 1
+    print('este es el result de replace arguments', result)
     return result
