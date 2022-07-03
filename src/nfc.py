@@ -41,10 +41,8 @@ class Reader:
 
         payload = utils.replace_arguments(payload, arguments)
         result = self.connection.transmit(payload)
-        print('este es el resultado', result)
 
-
-        """ACA SE GUARDA LA DATA QUE VIENE DE RESULT"""
+        """SAVE DATA FROM RESULT"""
 
         if len(result) == 3:
             data, sw1, sw2 = result
