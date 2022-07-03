@@ -39,7 +39,7 @@ class Reader:
         mode = option.alias.get(mode) or mode
         payload = option.options.get(mode)
 
-        # payload = utils.replace_arguments(payload, arguments)
+        payload = utils.replace_arguments(payload, arguments)
         result = self.connection.transmit(payload)
         print('este es el resultado', result)
 
